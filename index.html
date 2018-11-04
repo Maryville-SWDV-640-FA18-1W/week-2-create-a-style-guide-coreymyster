@@ -25,23 +25,23 @@
             font-size: 30px;
             font-weight: bold;
             font-family: 'Nanum Gothic', Helvetica, Arial, "sans-serif";
-            color: #49648A;
+            color: #112F41;
         }
 
         h2 {
             font-size: 24px;
-            color: #F3AD46;
+            color: #F2B134;
             font-family: 'Nanum Gothic', Helvetica, Arial, "sans-serif";
         }
 
         h3 {
             font-size: 18px;
             font-family: 'Nanum Gothic', Helvetica, Arial, "sans-serif";
-            color: #49648A;
+            color: #112F41;
         }
 
         button {
-            background-color: #51E392;
+            background-color: #068587;
             border-radius: 5px;
             padding: 10px;
             color: #F5F4EC;
@@ -50,11 +50,22 @@
         .inputLabel {
             font-size: 14px;
             font-weight: bold;
+            color: #112F41;
         }
 
         input.inputField {
             padding: 5px;
-            border: 1px solid orange;
+            border: 1px solid #F2B134;
+        }
+
+        #checkbox {
+          margin: 10px;
+        }
+
+        label {
+          color: #112F41;
+          font-weight: bold;
+          font-size: 14px;
         }
 
         div.box {
@@ -65,15 +76,15 @@
         }
 
         #primary1 {
-            background-color: #49648A;
+            background-color: #112F41;
         }
 
         #primary2 {
-            background-color: #51E392;
+            background-color: #F2B134;
         }
 
         #primary3 {
-            background-color: #F3AD46;
+            background-color: #068587;
         }
 
         #primary4 {
@@ -81,7 +92,7 @@
         }
 
         .warning {
-            background-color: yellow;
+            background-color: #F2EC78;
             font-weight: bold;
             color: black;
             padding: 10px;
@@ -89,7 +100,7 @@
         }
 
         .danger {
-            background-color: red;
+            background-color: #ED4434;
             font-weight: bold;
             color: white;
             padding: 10px;
@@ -97,7 +108,7 @@
         }
 
         .success {
-            background-color: green;
+            background-color: #40B923;
             font-weight: bold;
             color: white;
             padding: 10px;
@@ -117,6 +128,9 @@
             margin-top: 50px;
             padding: 10px;
             text-align: center;
+        }
+        a {
+          color: #068587;
         }
     </style>
 	<!-- Include script for font awesome icon library -->
@@ -236,10 +250,22 @@
                     <h1>
                         <a name="formElements"></a>Form Elements</h1>
                 </div>
-                <p>For the varous forms that the application will contain, it will contain input fields and labels with the below styling:</p>
+                <p>For the various forms that the application will contain, it will contain input fields and labels with the below styling:</p>
                 <form>
                     <label for="name" class="inputLabel">Name</label>
                     <input type="input" id="name" class="inputField" value="">
+                </form>
+                <h3>Checkboxes</h3>
+                <form>
+                  <input type="checkbox" id="checkbox"><label>Option 1</label>
+                  <input type="checkbox" id="checkbox"><label>Option 2</label>
+                  <input type="checkbox" id="checkbox"><label>Option 3</label>
+                </form>
+                <h3>Radio Buttons</h3>
+                <form>
+                  <input type="radio" id="checkbox"><label>Option 1</label>
+                  <input type="radio" id="checkbox"><label>Option 2</label>
+                  <input type="radio" id="checkbox"><label>Option 3</label>
                 </form>
             </div>
             <div class="spacer">
